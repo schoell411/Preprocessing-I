@@ -180,16 +180,23 @@ html {
 .page-body p {
   font-size: 1.5rem;
 }
+.page-body .left_side,
+.page-body .right_side {
+  border: 3px solid white;
+  margin: 2rem;
+}
+.page-body .left_side div,
+.page-body .right_side div {
+  border: 1px dashed white;
+}
 .left_side {
   width: 25vw;
-  border: 3px solid white;
+}
+.left_side li {
+  color: white;
 }
 .right_side {
   width: 75vw;
   display: flex;
   flex-direction: column;
-  margin: 1.5rem;
-}
-.right_side div {
-  margin: 2rem 0;
 }

@@ -186,12 +186,21 @@ html {
 	p {
 		font-size: 1.5rem;
 	}
+	.left_side, .right_side {
+		border: 3px solid white;
+		margin: 2rem;
+		div {
+			border: 1px dashed white;
+		}
+	}
 }
 
 // left column styling
 .left_side {
 	width: 25vw;
-	border: 3px solid white;
+	li {
+		color: white;
+	}
 }
 
 // right column styling
@@ -199,9 +208,4 @@ html {
 	width: 75vw;
 	display: flex;
 	flex-direction: column;
-	// line-height: 1.5;
-	margin: 1.5rem;
-	div {
-		margin: 2rem 0;
-	}
 }
