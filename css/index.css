@@ -137,8 +137,16 @@ body {
 html {
   font-size: 62.5%;
 }
+body {
+  background-color: #4169E1;
+}
 /* styling */
+.header {
+  display: flex;
+  justify-content: center;
+}
 h1 {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,4 +154,7 @@ h1 {
   background-color: #00BFFF;
   color: #F5F5F5;
   height: 75vh;
+  width: 80vw;
+  border: 3px dashed grey;
+  font-style: italic;
 }
