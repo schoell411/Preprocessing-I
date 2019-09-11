@@ -182,15 +182,19 @@ html {
 }
 .page-body .left_side,
 .page-body .right_side {
-  border: 3px solid white;
   margin: 2rem;
 }
 .page-body .left_side div,
 .page-body .right_side div {
-  border: 1px dashed white;
+  padding: 1rem;
+  border: 3px solid white;
 }
 .left_side {
   width: 25vw;
+}
+.left_side .left-content {
+  height: 100%;
+  align-items: stretch;
 }
 .left_side li {
   color: white;
