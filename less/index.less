@@ -3,83 +3,205 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-// variables
-@red: red;
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+
+html,
+body {
+  height: 100%;
+  background-color: #00BFFF;
 }
 html {
-	font-size: 62.5%;
-}
-body {
-	background-color: #4169E1;
-}
-/* styling */
-.header {
-	display: flex;
-	justify-content: center;
-}
-h1 {
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 25rem;
-	background-color: #00BFFF;
-	color: @red;
-	height: 80vh;
-	width: 80vw;
-	border: 3px dashed grey;
-	font-style: italic;
+  font-size: 62.5%;
 }
 
+// variables
+.header-font-style {
+	color: #708090;
+	font-family: "Hepta Slab", serif;
+}
+
+/* styling */
+// header styling
+.header {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 2.5rem 1.5rem;
+	font-style: italic;
+	h1 {
+		.header-font-style;
+		font-size: 7.5rem;
+		margin: 2.5rem;
+	}
+	h3 {
+		.header-font-style;
+		font-size: 3.5rem;
+	}
+}
+
+.page-body {
+	display: flex;
+	flex-direction: row-reverse;
+	line-height: 2;
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		text-decoration: underline white;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	h2, h3 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+}
+
+// left column styling
+.left_side {
+	width: 25vw;
+	border: 3px solid white;
+}
+
+// right column styling
+.right_side {
+	width: 75vw;
+	display: flex;
+	flex-direction: column;
+	// line-height: 1.5;
+	margin: 1.5rem;
+	div {
+		margin: 2rem 0;
+	}
+}
