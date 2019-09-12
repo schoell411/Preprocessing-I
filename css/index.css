@@ -165,7 +165,7 @@ html {
 }
 .header h1 {
   font-size: 7.5rem;
-  margin: 2.5rem;
+  margin: 2.5rem 1.5rem;
 }
 .header h3 {
   font-size: 3rem;
@@ -215,31 +215,32 @@ html {
   border-bottom: 3px dashed white;
   padding: 1.5rem;
 }
-.left_side {
+.page-body .left_side {
   width: 25vw;
 }
-.left_side div {
+.page-body .left_side div {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
-.left_side .left-content {
+.page-body .left_side .left-content {
   align-items: stretch;
 }
-.left_side .social-media {
+.page-body .left_side .social-media {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.right_side {
+.page-body .right_side {
   width: 75vw;
   display: flex;
   flex-direction: column;
 }
-.right_side .job1 {
+.page-body .right_side .job1 {
   border-bottom: 3px dashed white;
 }
-.right_side h3 {
+.page-body .right_side h3 {
   font-size: 2.5rem;
+  margin: 2.5rem 1.5rem;
 }
