@@ -134,12 +134,13 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   max-width: 100%;
 }
 
 html,
 body {
-  height: 100%;
   background-color: #778899;
 }
 html {
@@ -187,6 +188,15 @@ html {
       font-size: 1.5rem;
     }
   }
+  @media (max-width:500px){
+    flex-direction: column;
+    img {
+      display: none;
+    }
+    div nav {
+      flex-direction: row;
+    }
+  }
 }
 
 .page-body {
@@ -213,45 +223,49 @@ html {
     margin: 2rem;
     div {
       padding: 1rem;
-      border: 3px solid white;
+      border: 0.3rem solid white;
       section {
-        border-bottom: 3px dashed white;
+        border-bottom: 0.3rem dashed white;
         padding: 1.5rem;
       }
     }
   }
 
-
-// left column styling
-.left_side {
-  div {
+  // left column styling
+  .left_side {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .left-content {
+      align-items: stretch;
+    }
+    width: 25%;
+    .social-media {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  // right column styling
+  .right_side {
+    width: 75%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    .job1 {
+      border-bottom: 0.3rem dashed white;
+    }
+    h3 {
+      font-size: 2.5rem;
+      margin: @margin;
+    }
   }
-  .left-content {
-    align-items: stretch;
+  @media (max-width:500px){
+    flex-direction: column;
+    .left_side, .right_side {
+      width: 100%;
+    }
   }
-  width: 25vw;
-  .social-media {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-// right column styling
-.right_side {
-  width: 75vw;
-  display: flex;
-  flex-direction: column;
-  .job1 {
-    border-bottom: 3px dashed white;
-  }
-  h3 {
-	font-size: 2.5rem;
-	margin: @margin;
-  }
-}
-
 }
