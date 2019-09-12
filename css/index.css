@@ -109,7 +109,9 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  padding-left: 1rem;
+  list-style: square;
+  font-size: 1.5rem;
 }
 blockquote,
 q {
@@ -140,18 +142,26 @@ html {
   font-size: 62.5%;
 }
 .font-style {
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-family: "Hepta Slab", serif;
 }
 /* styling */
 .header {
-  color: #F5F5F5;
+  justify-content: space-evenly;
+  color: #f5f5f5;
   font-family: "Hepta Slab", serif;
   display: flex;
   flex-direction: row;
   text-align: center;
   margin: 2.5rem 1.5rem;
   font-style: italic;
+}
+.header #title {
+  display: flex;
+  flex-direction: column;
+}
+.header div {
+  display: flex;
 }
 .header h1 {
   font-size: 7.5rem;
@@ -163,7 +173,6 @@ html {
 .header div nav {
   display: flex;
   flex-direction: column;
-  padding-right: 22rem;
 }
 .header div nav a {
   padding: 1rem;
@@ -175,7 +184,7 @@ html {
   display: flex;
   flex-direction: row-reverse;
   line-height: 2;
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-family: "Hepta Slab", serif;
 }
 .page-body h1 {
@@ -187,6 +196,7 @@ html {
 .page-body h2,
 .page-body h3 {
   font-size: 2rem;
+  margin: 2rem 0 0 0;
 }
 .page-body p {
   font-size: 1.5rem;
@@ -208,16 +218,18 @@ html {
 .left_side {
   width: 25vw;
 }
-.left_side .left-content {
-  height: 100%;
+.left_side div {
+  display: flex;
+  flex-direction: column;
   align-items: stretch;
 }
-.left_side p {
-  margin-top: 2rem;
+.left_side .left-content {
+  align-items: stretch;
 }
 .left_side .social-media {
   margin-top: 2rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 .right_side {
@@ -227,4 +239,7 @@ html {
 }
 .right_side .job1 {
   border-bottom: 3px dashed white;
+}
+.right_side h3 {
+  font-size: 2.5rem;
 }

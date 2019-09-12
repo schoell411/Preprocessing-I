@@ -111,7 +111,9 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  padding-left: 1rem;
+  list-style: square;
+  font-size: 1.5rem;
 }
 blockquote,
 q {
@@ -135,7 +137,6 @@ table {
   max-width: 100%;
 }
 
-
 html,
 body {
   height: 100%;
@@ -147,92 +148,106 @@ html {
 
 // variables
 .font-style {
-	color: #F5F5F5;
-	font-family: "Hepta Slab", serif;
+  color: #f5f5f5;
+  font-family: "Hepta Slab", serif;
 }
 
 /* styling */
 // header styling
 .header {
-	.font-style;
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	margin: 2.5rem 1.5rem;
-	font-style: italic;
-	h1 {
-		font-size: 7.5rem;
-		margin: 2.5rem;
-	}
-	h3 {
-		font-size: 3rem;
-	}
-	div nav {
+	justify-content: space-evenly;
+	#title {
 		display: flex;
 		flex-direction: column;
-		padding-right: 22rem;
-		a {
-			padding: 1rem;
-			text-decoration: none;
-			color: white;
-			font-size: 1.5rem;
-		}
 	}
+	div{
+	display: flex;
+}
+  .font-style;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin: 2.5rem 1.5rem;
+  font-style: italic;
+  h1 {
+    font-size: 7.5rem;
+    margin: 2.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  div nav {
+    display: flex;
+    flex-direction: column;
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .page-body {
-	display: flex;
-	flex-direction: row-reverse;
-	line-height: 2;
-	.font-style;
-	h1 {
-		font-size: 2.5rem;
-		margin-bottom: 3rem;
-		text-transform: uppercase;
-		text-align: center;
-	}
-	h2, h3 {
-		font-size: 2rem;
-	}
-	p {
-		font-size: 1.5rem;
-	}
-	.left_side, .right_side {
-		margin: 2rem;
-		div {
-			padding: 1rem;
-			border: 3px solid white;
-			section {
-				border-bottom: 3px dashed white;
-				padding: 1.5rem;
-			}
-		}
-	}
+  display: flex;
+  flex-direction: row-reverse;
+  line-height: 2;
+  .font-style;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h2,
+  h3 {
+	font-size: 2rem;
+	margin: 2rem 0 0 0;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .left_side,
+  .right_side {
+    margin: 2rem;
+    div {
+      padding: 1rem;
+      border: 3px solid white;
+      section {
+        border-bottom: 3px dashed white;
+        padding: 1.5rem;
+      }
+    }
+  }
 }
 
 // left column styling
 .left_side {
-	.left-content {
-		height: 100%;
-		align-items: stretch;
+	div{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
 	}
-	width: 25vw;
-	p {
-	margin-top: 2rem;
-	}
-	.social-media {
-		margin-top: 2rem;
-		display: flex;
-		justify-content: space-around;
-	}
+  .left-content {
+	align-items: stretch;
+  }
+  width: 25vw;
+  .social-media {
+    margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-around;
+  }
 }
 // right column styling
 .right_side {
-	width: 75vw;
-	display: flex;
-	flex-direction: column;
-	.job1 {
-		border-bottom: 3px dashed white;
-	}
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+  .job1 {
+    border-bottom: 3px dashed white;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
 }
-
