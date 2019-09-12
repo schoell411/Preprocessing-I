@@ -171,11 +171,11 @@ html {
 .header h3 {
   font-size: 3rem;
 }
-.header div nav {
+.header #nav {
   display: flex;
   flex-direction: column;
 }
-.header div nav a {
+.header #nav a {
   padding: 1rem;
   text-decoration: none;
   color: white;
@@ -188,8 +188,12 @@ html {
   .header img {
     display: none;
   }
-  .header div nav {
+  .header #nav {
+    width: 95%;
+    justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid white;
   }
 }
 .page-body {
@@ -262,6 +266,6 @@ html {
   }
   .page-body .left_side,
   .page-body .right_side {
-    width: 100%;
+    width: 90%;
   }
 }
