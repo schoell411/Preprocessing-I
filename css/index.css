@@ -129,47 +129,57 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html,
 body {
   height: 100%;
-  background-color: #00BFFF;
+  background-color: #778899;
 }
 html {
   font-size: 62.5%;
 }
-.header-font-style {
-  color: #708090;
+.font-style {
+  color: #F5F5F5;
   font-family: "Hepta Slab", serif;
 }
 /* styling */
 .header {
+  color: #F5F5F5;
+  font-family: "Hepta Slab", serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   margin: 2.5rem 1.5rem;
   font-style: italic;
 }
 .header h1 {
-  color: #708090;
-  font-family: "Hepta Slab", serif;
   font-size: 7.5rem;
   margin: 2.5rem;
 }
 .header h3 {
-  color: #708090;
-  font-family: "Hepta Slab", serif;
-  font-size: 3.5rem;
+  font-size: 3rem;
+}
+.header div nav {
+  display: flex;
+  flex-direction: column;
+  padding-right: 22rem;
+}
+.header div nav a {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
 }
 .page-body {
   display: flex;
   flex-direction: row-reverse;
   line-height: 2;
+  color: #F5F5F5;
+  font-family: "Hepta Slab", serif;
 }
 .page-body h1 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  text-decoration: underline white;
   text-transform: uppercase;
   text-align: center;
 }
@@ -189,6 +199,11 @@ html {
   padding: 1rem;
   border: 3px solid white;
 }
+.page-body .left_side div section,
+.page-body .right_side div section {
+  border-bottom: 3px dashed white;
+  padding: 1.5rem;
+}
 .left_side {
   width: 25vw;
 }
@@ -196,11 +211,19 @@ html {
   height: 100%;
   align-items: stretch;
 }
-.left_side li {
-  color: white;
+.left_side p {
+  margin-top: 2rem;
+}
+.left_side .social-media {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
 }
 .right_side {
   width: 75vw;
   display: flex;
   flex-direction: column;
+}
+.right_side .job1 {
+  border-bottom: 3px dashed white;
 }
